@@ -31,6 +31,10 @@ function Layout({ title, children }) {
         />
         <link rel="icon" href="codelogo.png" />
       </Head>
+      <div className="md:hidden space-y-4 h-screen w-full flex flex-col items-center justify-center">
+        <h1 className='text-xl'>I say not to open on mobile.</h1>
+        <h1>Una no dey hear word. Dah</h1>
+      </div>
       <div className="hidden md:block text-white">
         {timer <= 100 ? (
           <Loader />
