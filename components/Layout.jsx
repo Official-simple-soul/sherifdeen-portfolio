@@ -7,7 +7,7 @@ import { BsFillChatDotsFill } from 'react-icons/bs';
 import { useGlobalContext } from '../context/context';
 import ChatBox from './ChatBox';
 import { FaTimes } from 'react-icons/fa';
-import {FaCode} from 'react-icons/fa'
+import { FaCode } from 'react-icons/fa';
 
 function Layout({ title, children }) {
   const { timer } = useGlobalContext();
@@ -20,53 +20,61 @@ function Layout({ title, children }) {
       <Head>
         <title>{title ? title : 'Simple_soul'}</title>
         <meta name="description" content="Simple_soul Portfolio" />
+        <meta property="og:title" content="Simple_soul portfolio" />
+        <meta
+          property="og:image"
+          content="https://i.pinimg.com/originals/1c/54/f7/1c54f7b06d7723c21afc5035bf88a5ef.png"
+        />
+        <meta
+          property="og:url"
+          content="https://sherifdeen-portfolio.vercel.app/"
+        />
         <link rel="icon" href="codelogo.png" />
       </Head>
       <div className="hidden md:block text-white">
-      {timer <= 100 ? (
-        <Loader />
-      ) : (
-        <div className="relative flex p-8">
-          <Header />
-          <main
-          data-aos="fade-up"
-            className={`relative bg pt-10 px-8 h-[91vh] overflow-auto scroll-smooth w-[70%] transition-all ease-in-out duration-500`}
-          >
-            {children}
-          </main>
-          <SideBar />
-          <div className="relative bg-red-500">
-            <div
-              className={`${
-                showChat ? 'w-64' : 'w-0'
-              } absolute right-10 bottom-0 h-80 overflow-auto transition-all ease-in-out duration-1000`}
+        {timer <= 100 ? (
+          <Loader />
+        ) : (
+          <div className="relative flex p-8">
+            <Header />
+            <main
+              data-aos="fade-up"
+              className={`relative bg pt-10 px-8 h-[91vh] overflow-auto scroll-smooth w-[70%] transition-all ease-in-out duration-500`}
             >
-              <ChatBox
-                showChat={showChat}
-                setShowChat={setShowChat}
-                flag={flag}
-                setFlag={setFlag}
-              />
-            </div>
-            {!showChat ? (
-              <div className="transition-all absolute bottom-0 right-10 ease-in-out duration-1000 flex flex-col justify-end items-end">
-                <BsFillChatDotsFill
-                  className="text-[50px] z-40 cursor-pointer"
-                  onClick={() => {
-                    setShowChat(true);
-                    setFlag(true);
-                  }}
+              {children}
+            </main>
+            <SideBar />
+            <div className="relative bg-red-500">
+              <div
+                className={`${
+                  showChat ? 'w-64' : 'w-0'
+                } absolute right-10 bottom-0 h-80 overflow-auto transition-all ease-in-out duration-1000`}
+              >
+                <ChatBox
+                  showChat={showChat}
+                  setShowChat={setShowChat}
+                  flag={flag}
+                  setFlag={setFlag}
                 />
-                <p className="text-[10px] text-other2">Chat with me</p>
               </div>
-            ) : (
-              ''
-            )}
+              {!showChat ? (
+                <div className="transition-all absolute bottom-0 right-10 ease-in-out duration-1000 flex flex-col justify-end items-end">
+                  <BsFillChatDotsFill
+                    className="text-[50px] z-40 cursor-pointer"
+                    onClick={() => {
+                      setShowChat(true);
+                      setFlag(true);
+                    }}
+                  />
+                  <p className="text-[10px] text-other2">Chat with me</p>
+                </div>
+              ) : (
+                ''
+              )}
+            </div>
           </div>
-        </div>
-      )}
+        )}
       </div>
-      
     </>
   );
 }
