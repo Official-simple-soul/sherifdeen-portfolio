@@ -22,12 +22,14 @@ function Layout({ title, children }) {
         <meta name="description" content="Simple_soul Portfolio" />
         <link rel="icon" href="codelogo.png" />
       </Head>
+      <div className="hidden md:block text-white">
       {timer <= 100 ? (
         <Loader />
       ) : (
         <div className="relative flex p-8">
           <Header />
           <main
+          data-aos="fade-up"
             className={`relative bg pt-10 px-8 h-[91vh] overflow-auto scroll-smooth w-[70%] transition-all ease-in-out duration-500`}
           >
             {children}
@@ -63,6 +65,8 @@ function Layout({ title, children }) {
           </div>
         </div>
       )}
+      </div>
+      
     </>
   );
 }
