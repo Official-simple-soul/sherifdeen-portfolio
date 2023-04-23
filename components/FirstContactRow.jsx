@@ -8,7 +8,7 @@ const {light} = useGlobalContext()
     <div>
       <h1 className='font-bold text-center md:text-start mt-5 md:mt-0'>Contact information</h1>
       <div className="grid md:grid-cols-3 gap-5 mt-5">
-        <div className={`${light?'bg-[#F4F4F6]':'bg-cards'} card bg-cards px-5 py-8`}>
+        <div className={`${light?'bg-white':'bg-cards'} card bg-cards px-5 py-8`}>
           <div className="text-[12px] flex justify-between items-center">
             <p>Country:</p>
             <p className="text-other2">Nigeria</p>
@@ -22,7 +22,7 @@ const {light} = useGlobalContext()
             <p className="text-other2">Eket</p>
           </div>
         </div>
-        <div className={`${light?'bg-[#F4F4F6]':'bg-cards'} card bg-cards px-5 py-8`}>
+        <div className={`${light?'bg-white':'bg-cards'} card bg-cards px-5 py-8`}>
           <div className="text-[12px] flex justify-between items-center">
             <p>Email:</p>
             <p className="text-other2">abdurroheemsherifdeen@gmail</p>
@@ -36,7 +36,7 @@ const {light} = useGlobalContext()
             <p className="text-other2">abdurroheemsherifdeen</p>
           </div>
         </div>
-        <div className={`${light?'bg-[#F4F4F6]':'bg-cards'} card bg-cards px-5 py-8`}>
+        <div className={`${light?'bg-white':'bg-cards'} card bg-cards px-5 py-8`}>
           <div className="text-[12px] flex justify-between items-center">
             <p>Twitter:</p>
             <p className="text-other2">@sir-simple-soul</p>
