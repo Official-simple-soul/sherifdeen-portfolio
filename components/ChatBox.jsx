@@ -98,7 +98,7 @@ function ChatBox({ showChat, setShowChat, flag, setFlag }) {
   }, [userChat]);
 
   return (
-    <div className="h-[100%] w-full bg-white overflow-auto relative">
+    <div className="h-[100%] w-full bg-white shadow-md border border-gray-300 overflow-auto relative">
       <FaTimes
         className={`${
           showChat ? '' : 'hidden'

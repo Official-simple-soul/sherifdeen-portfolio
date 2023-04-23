@@ -23,7 +23,7 @@ function Skill() {
 
   let IconComp = skill[showId - 1].icon;
   return (
-    <div className="text-white relative flex justify-center items-center border-b pt-4 pb-8 border-gray-500">
+    <div className="relative flex justify-center items-center border-b pt-4 pb-8 border-gray-500">
       <div
         className="flex justify-center items-center circle w-[7rem] h-[7rem] border-8 border-dashed rounded-full transition-all ease-in-out duration-500"
         style={{ borderColor: skill[showId - 1].color }}

@@ -18,13 +18,12 @@ function Main() {
   const { showNav } = useGlobalContext();
   return (
     <div className='relative'>
-    
       <MainTop />
-      <div className="flex items-center justify-between py-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-4 py-8">
         {expe.map((exp) => (
-          <div className="flex space-x-3 items-center" key={exp.dig}>
-            <h1 className='text-3xl text-other1'>{exp.dig}</h1>
-            <h1 className='text-[14px]'>{exp.desc}</h1>
+          <div className="md:flex shadow py-1 space-x-3 items-center text-center md:text-start mb-2" key={exp.dig}>
+            <h1 className='text-xl md:text-3xl text-other1'>{exp.dig}</h1>
+            <h1 className='text-[12px] md:text-[14px]'>{exp.desc}</h1>
           </div>
         ))}
       </div>

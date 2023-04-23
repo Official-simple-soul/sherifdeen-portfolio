@@ -3,12 +3,14 @@ import { FaUserAlt } from 'react-icons/fa';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { GoMail } from 'react-icons/go';
 import emailJs from '@emailjs/browser';
+import { useGlobalContext } from '../context/context';
 
 function GetInTouch() {
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+const {light} = useGlobalContext()
 
   const [val, setVal] = useState({
     user_name: '',
@@ -63,15 +65,15 @@ function GetInTouch() {
 
   return (
     <div className="mt-6 mb-10">
-      <h1 className="font-bold mb-6">Get in touch</h1>
+      <h1 className="font-bold mb-6 text-center md:text-start">Get in touch</h1>
       <form
         action=""
         onSubmit={handleSubmit}
         ref={form}
-        className="bg-cards p-5 space-y-6"
+        className={`${light?'bg-white':'bg-cards'} p-5 space-y-6`}
       >
-        <div className="flex w-full bg-priBG h-12">
-          <FaUserAlt className="px-4 h-[100%] text-other2 text-[45px] bg-secBG" />
+        <div className={`${light?'bg-[#F4F4F6]':'bg-cards'} flex w-full h-12`}>
+          <FaUserAlt className={`${light?'bg-[#F4F4F6]':'bg-secBG'} px-4 h-[100%] text-other2 text-[45px]`} />
           <input
             type="name"
             name="user_name"
@@ -82,8 +84,8 @@ function GetInTouch() {
             className="focus:outline-none placeholder:text-other2 placeholder:text-[12px] px-2 w-full bg-transparent h-full text-other2 text-[14px]"
           />
         </div>
-        <div className="flex w-full bg-priBG h-12">
-          <MdOutlineAlternateEmail className="px-4 h-[100%] text-other2 text-[45px] bg-secBG" />
+        <div className={`${light?'bg-[#F4F4F6]':'bg-cards'} flex w-full h-12`}>
+          <MdOutlineAlternateEmail className={`${light?'bg-[#F4F4F6]':'bg-secBG'} px-4 h-[100%] text-other2 text-[45px]`} />
           <input
             type="email"
             name="user_email"
@@ -94,8 +96,8 @@ function GetInTouch() {
             className="focus:outline-none placeholder:text-other2 placeholder:text-[12px] px-2 w-full bg-transparent h-full text-other2 text-[14px]"
           />
         </div>
-        <div className="flex w-full bg-priBG h-28">
-          <div className="h-[100%] bg-secBG">
+        <div className={`${light?'bg-[#F4F4F6]':'bg-cards'} flex w-full h-28`}>
+          <div className={`${light?'bg-[#F4F4F6]':'bg-secBG'} h-[100%]`}>
             <GoMail className="px-4 text-other2 text-[45px]" />
           </div>
           <textarea

@@ -3,13 +3,15 @@ import { reviews } from '../data/data';
 import Image from 'next/image';
 import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
 import Star from '../functions/Star'
+import { useGlobalContext } from '../context/context';
 
 function Recommendations() {
   const [num, setNum] = useState(1);
+  const {light} = useGlobalContext()
 
   const handleNext = () => {
-    num === reviews.length - 1
-      ? setNum(reviews.length - 1)
+    num === reviews.length
+      ? setNum(reviews.length)
       : setNum((prev) => prev + 1);
   };
 
@@ -17,9 +19,10 @@ function Recommendations() {
     num === 1 ? setNum(1) : setNum((prev) => prev - 1);
   };
 
+
   return (
     <div className='mt-6' id='recommendations'>
-      <h1>Recommendations</h1>
+      <h1 className='text-center md:text-start'>Recommendations</h1>
       <div className="mt-5 relative">
         {reviews.map((rev, idx) => {
           const { name, title, review, rating, image } = rev;
@@ -30,11 +33,11 @@ function Recommendations() {
               : idx + 1 === num
               ? 'left-[0%]'
               : idx + 1 === num + 1
-              ? 'left-[52%]'
+              ? 'md:left-[52%] left-[100%]'
               : 'left-[200%] opacity-0';
           return (
             <div
-              className={`${cardLeft}  card p-5 bg-cards absolute w-[48%] h-[210px] transition-all ease-in-out duration-1000`}
+              className={`${cardLeft}  ${light?'bg-white':'bg-cards'} shadow-md card p-5 absolute w-[100%] md:w-[48%] h-[210px] transition-all ease-in-out duration-1000`}
               key={name}
             >
               <div className="absolute h-16 w-16 right-7 -top-7">
@@ -44,7 +47,7 @@ function Recommendations() {
               <h1 className="text-[12px] italic text-other2 mt-1">{title}</h1>
               <p className="text-[12px] text-other2 mt-6">{review}</p>
               <div className="flex justify-start mt-6">
-                <div className="flex space-x-1 px-4 bg-secBG py-2 rounded-xl text-[14px]">
+                <div className={`${light?'bg-[#DFDFE5]':'bg-secBG'} flex space-x-1 px-4 py-2 rounded-xl text-[14px]`}>
                   <Star n={rating} />
                 </div>
               </div>

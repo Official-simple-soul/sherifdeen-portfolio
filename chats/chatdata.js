@@ -1,6 +1,6 @@
 const chatData = {
     a: `Thank u for choosing us
-    Please kindly go to the Plans section to book a seesion with us
+    Please kindly go to the Plans section to book a session with us
     or choose from below for me to help you
     a1. Take me to the Plans section
     a2. Get a contact to call
@@ -27,7 +27,7 @@ a. I want to book
 b. I need a mentor
 c. I cant locate ur contact
 d. Nothing`,
-    welcome: `Welcome, how can help u
+    welcome: `Welcome, how can i help u
     Choose from the option. a/b/c
     a. I want to book
     b. I need a mentor

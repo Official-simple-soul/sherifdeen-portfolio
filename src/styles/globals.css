@@ -57,6 +57,17 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+.bgA {
+  background: linear-gradient(
+      to bottom,
+      #e9e9efd5,
+      #E9E9EF
+    ),
+    url('/skillImages/indexBG.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .bg2 {
   background: linear-gradient(
@@ -69,6 +80,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
 
 .overflow-auto::-webkit-scrollbar {
   width: 0;

@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter';
-function MainTop() {
+import { useGlobalContext } from '../context/context';
 
+function MainTop() {
+const {light} = useGlobalContext()
 
   const handleType = (count) => {
     // access word count number
@@ -13,12 +15,12 @@ function MainTop() {
   }
 
   return (
-    <div className="bg2 p-16 relative">
-      <div className="content">
+    <div className={`bg2 p-8 md:p-16 relative`}>
+      <div className="content text-center md:text-start">
         <h1 className="text-4xl text-white font-bold">
           Discover my Amazing <br></br>Art Space!
         </h1>
-        <code className="block my-4">
+        <code className={`${light&&'text-white'} block my-4 text-[12px] md:text-[14px]`}>
           <span className="text-other1 mr-2">{'<code>'}</span><span>
           <Typewriter
             words={['I build web interface', 'I build ios and andriod app', 'I create responsive web app', 'I offer mentorship and trainings']}
@@ -43,7 +45,7 @@ function MainTop() {
         // fill
         height={420}
         width={420}
-        className="absolute right-0 -top-10"
+        className="hidden md:block absolute right-0 -top-10"
       />
     </div>
   );

@@ -5,12 +5,13 @@ import Image from 'next/image';
 import Skill from './Skill';
 import SkillList from './SkillList';
 import { FaDownload } from 'react-icons/fa';
-import { socialMedia } from '../data/data';
+import { useGlobalContext } from '../context/context';
 
-function Header() {
+function Header({showHeader, setShowHeader}) {
+  const {light} = useGlobalContext()
   return (
-    <div className="z-40 w-[25%] fixed h-[91vh] relative">
-      <div className="top bg-priBG py-8 px-6 h-[37%]">
+    <div className={`${showHeader?'left-0':'-left-96'} w-[65%] z-40 md:w-[25%] h-[95vh] md:h-[91vh] bottom-0 absolute md:static transition-all ease-in-out duration-500`}>
+      <div className={`${light?'bg-[#FEFEFE]':'bg-priBG'} shadow-md top bg-priBG py-8 px-6 h-[37%] transition-all ease-in-out duration-500`}>
         <div className="relative w-20 h-20 mx-auto">
           <Image
             src={'/skillImages/logo.jpg'}
@@ -27,7 +28,7 @@ function Header() {
           <h4 className="text-[#8C8C8E] text-[14px]">DevOps Engineer</h4>
         </div>
       </div>
-      <div className="relative overflow-auto scroll-smooth px-6 py-3 bg-secBG h-[63%]">
+      <div className={`${light?'bg-[#F4F4F6]':'bg-secBG'} shadow-md relative overflow-auto scroll-smooth px-6 py-3 h-[63%] transition-all ease-in-out duration-500`}>
         <div className="top pb-4 border-b border-gray-500">
           <div className="flex justify-between items-center">
             <h5 className="text-[14px]">Residence:</h5>

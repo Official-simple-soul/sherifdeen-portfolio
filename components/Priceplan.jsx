@@ -3,13 +3,17 @@ import React from 'react';
 import { BsCheck } from 'react-icons/bs';
 import { FaTimes, FaAngleRight } from 'react-icons/fa';
 import { IoIosClose } from 'react-icons/io';
+import { useGlobalContext } from '../context/context';
+
 
 function Priceplan() {
+  const {light} = useGlobalContext()
+  
   return (
     <div id='plans'>
-      <h1 className="my-6">Training Price Plan</h1>
-      <div className="grid grid-cols-3 gap-4">
-        <div className="card bg-cards text-center py-8 relative overflow-hidden">
+      <h1 className="my-6 text-center md:text-start">Training Price Plan</h1>
+      <div className="grid md:grid-cols-3 gap-4">
+        <div className={`${light?'bg-white':'bg-cards'} card shadow-md text-center py-8 relative overflow-hidden  transition-all ease-in-out duration-500`}>
           <h1>Starter Price</h1>
           <p className="text-light text-[12px] my-6">
             $ <span className="text-4xl text-bold text-other1">FREE</span>/ hour
@@ -50,7 +54,7 @@ function Priceplan() {
             <FaAngleRight className="transition-all ease-in-out duration-500 text-sm" />
           </Link>
         </div>
-        <div className="card bg-cards text-center py-8 relative overflow-hidden">
+        <div className={`${light?'bg-white':'bg-cards'}  shadow-md card text-center py-8 relative overflow-hidden  transition-all ease-in-out duration-500`}>
           <h1>Basic Price</h1>
           <p className="text-light text-[12px] my-6">
             $ <span className="text-4xl text-bold text-other1">5</span>/ hour
@@ -98,7 +102,7 @@ function Priceplan() {
             POPULAR
           </div>
         </div>
-        <div className="card bg-cards text-center py-8 relative">
+        <div className={`${light?'bg-white':'bg-cards'}  shadow-md card text-center py-8 relative  transition-all ease-in-out duration-500`}>
           <h1>Premium Price</h1>
           <p className="text-light text-[12px] my-6">
             $ <span className="text-4xl text-bold text-other1">12</span> hour

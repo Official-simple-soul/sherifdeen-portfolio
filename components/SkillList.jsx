@@ -10,7 +10,7 @@ function SkillList() {
         return (
           <li key={skills.id}>
             <div className="flex justify-between items-center text-[14px]">
-              <h6 className='text-white'>{skill.toLowerCase()}</h6>
+              <h6 className=''>{skill.toLowerCase()}</h6>
               <IconIcon style={{color: color}}/>
             </div>
             <div className="bg-[black] w-full h-1 mt-1">
