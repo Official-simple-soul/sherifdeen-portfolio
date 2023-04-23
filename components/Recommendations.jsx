@@ -23,21 +23,21 @@ function Recommendations() {
   return (
     <div className='mt-6' id='recommendations'>
       <h1 className='text-center md:text-start'>Recommendations</h1>
-      <div className="mt-5 relative">
+      <div className="mt-6 md:mt-8 lg:mt-5 relative">
         {reviews.map((rev, idx) => {
           const { name, title, review, rating, image } = rev;
 
           const cardLeft =
             idx + 1 === num - 1
-              ? 'md:-left-[100%] opacity-0'
+              ? 'lg:-left-[100%] opacity-0'
               : idx + 1 === num
               ? 'left-[0%]'
               : idx + 1 === num + 1
-              ? 'md:left-[52%] md:opacity-100 opacity-0'
-              : 'md:left-[200%] opacity-0';
+              ? 'lg:left-[52%] lg:opacity-100 opacity-0'
+              : 'lg:left-[200%] opacity-0';
           return (
             <div
-              className={`${cardLeft}  ${light?'bg-white':'bg-cards'} shadow-md card p-5 absolute w-[100%] md:w-[48%] h-[210px] transition-all ease-in-out duration-1000`}
+              className={`${cardLeft}  ${light?'bg-white':'bg-cards'} shadow-md card p-5 absolute w-[100%] lg:w-[48%] h-[210] md:h-[250px] lg:h-[210px] transition-all ease-in-out duration-1000`}
               key={name}
             >
               <div className="absolute h-16 w-16 right-7 -top-7">
@@ -55,7 +55,7 @@ function Recommendations() {
           );
         })}
       </div>
-      <div className="flex py-5 mt-[210px] justify-between items-center">
+      <div className="flex py-5 md:mt-[260px] lg:mt-[210px] px-2 md:px-0 justify-between items-center">
         <div className="flex items-center space-x-3">
           {reviews.slice(0, reviews.length - 1).map((e, idx) => (
             <div

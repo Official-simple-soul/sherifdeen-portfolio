@@ -20,7 +20,7 @@ function ProjectMain() {
           <div className="animate-spin h-5 w-5 border-t border-r border-b border-4 border-gray-700 rounded-full"></div>
         </div>
       ) : (
-        <div className="md:columns-3 md:gap-10 mb-10 px-6 mt-6">
+        <div className="lg:columns-3 lg:gap-10 mb-10 px-6 mt-6">
           {projects.map((project) => {
             return (
               <div

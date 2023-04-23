@@ -16,15 +16,15 @@ function MainTop() {
   };
 
   return (
-    <div className={`bg2 p-8 md:p-16 relative`}>
-      <div className="content text-center md:text-start">
+    <div className={`bg2 p-8 lg:p-16 relative`}>
+      <div className="content text-center lg:text-start">
         <h1 className="text-4xl text-white font-bold">
           Discover my Amazing <br></br>Art Space!
         </h1>
         <code
           className={`${
             light && 'text-white'
-          } block my-4 text-[12px] md:text-[14px]`}
+          } block my-4 text-[12px] lg:text-[14px]`}
         >
           <span className="text-other1 mr-2">{'<code>'}</span>
           <span>
@@ -59,7 +59,7 @@ function MainTop() {
         // fill
         height={420}
         width={420}
-        className="hidden md:block absolute right-0 -top-10"
+        className="hidden lg:block absolute right-0 -top-10"
       />
     </div>
   );

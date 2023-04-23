@@ -10,7 +10,7 @@ import { useGlobalContext } from '../context/context';
 function Header({showHeader, setShowHeader}) {
   const {light} = useGlobalContext()
   return (
-    <div className={`${showHeader?'left-0':'-left-96'} w-[65%] z-40 md:w-[25%] h-[95vh] md:h-[91vh] bottom-0 absolute md:static transition-all ease-in-out duration-500`}>
+    <div className={`${showHeader?'left-0':'-left-96'} w-[65%] z-40 md:w-[40%] lg:w-[25%] h-[95vh] md:h-[91vh] bottom-0 absolute md:static transition-all ease-in-out duration-500`}>
       <div className={`${light?'bg-white':'bg-priBG'} shadow-md top bg-priBG py-8 px-6 h-[37%] transition-all ease-in-out duration-500`}>
         <div className="relative w-20 h-20 mx-auto">
           <Image

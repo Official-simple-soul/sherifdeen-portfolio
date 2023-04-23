@@ -7,7 +7,7 @@ const {light} = useGlobalContext()
   return (
     <div>
       <h1 className='font-bold text-center md:text-start mt-5 md:mt-0'>Contact information</h1>
-      <div className="grid md:grid-cols-3 gap-5 mt-5">
+      <div className="grid lg:grid-cols-3 gap-5 mt-5">
         <div className={`${light?'bg-white':'bg-cards'} card bg-cards px-5 py-8`}>
           <div className="text-[12px] flex justify-between items-center">
             <p>Country:</p>

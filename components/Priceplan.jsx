@@ -12,7 +12,7 @@ function Priceplan() {
   return (
     <div id='plans'>
       <h1 className="my-6 text-center md:text-start">Training Price Plan</h1>
-      <div className="grid md:grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 gap-4">
         <div className={`${light?'bg-white':'bg-cards'} rounded-md card shadow-md text-center py-8 relative overflow-hidden  transition-all ease-in-out duration-500`}>
           <h1>Starter Price</h1>
           <p className="text-light text-[12px] my-6">

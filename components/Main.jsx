@@ -19,7 +19,7 @@ function Main() {
   return (
     <div className='relative'>
       <MainTop />
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-4 py-8">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-4 py-8">
         {expe.map((exp) => (
           <div className="md:flex shadow py-1 px-2 space-x-3 items-center text-center md:text-start mb-2" key={exp.dig}>
             <h1 className='text-xl md:text-2xl text-other1'>{exp.dig}</h1>
