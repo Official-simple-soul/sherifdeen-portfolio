@@ -87,7 +87,7 @@ export const skill = [
 export const services = [
   {
     image: '<i class="fa-solid fa-laptop-code fs-1"></i>',
-    title: 'Web Devevelopement',
+    title: 'Web Developement',
     text: `As a web developer, I offer comprehensive web development services to help bring your online presence to life. My expertise includes designing and coding web pages using HTML, CSS, and JavaScript to create visually appealing and interactive websites. `,
   },
 

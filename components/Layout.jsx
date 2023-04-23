@@ -59,7 +59,7 @@ const {light} = useGlobalContext()
                 />
               </div>
               {!showChat ? (
-                <div className="transition-all absolute bottom-4 md:bottom-0 right-5 md:right-10 ease-in-out duration-1000 flex flex-col justify-end items-end">
+                <div className="transition-all fixed bottom-4 md:bottom-0 right-5 md:right-10 ease-in-out duration-1000 flex flex-col justify-end items-end">
                   <BsFillChatDotsFill
                     className="text-4xl md:text-[50px] z-40 cursor-pointer"
                     onClick={() => {
@@ -67,7 +67,6 @@ const {light} = useGlobalContext()
                       setFlag(true);
                     }}
                   />
-                  {/* <p className="text-[10px] text-other2">Chat me</p> */}
                 </div>
               ) : (
                 ''
