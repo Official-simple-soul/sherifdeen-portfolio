@@ -9,11 +9,11 @@ const Loader = () => {
     if (timer === 25 || timer === 45 || timer === 70 || timer === 80 || timer === 95) {
       setTimeout(() => {
         setTimer((prev) => prev + 1);
-      }, 2000);
+      }, 1000);
     } else {
       const intervalId = setInterval(() => {
         setTimer((prev) => prev + 1);
-      }, 100);
+      }, 50);
       if (timer === 115) {
         clearInterval(intervalId);
       }
@@ -28,20 +28,18 @@ const Loader = () => {
   };
 
   const handleDone = () => {
-    console.log(`Done after 5 loops!`);
+    // console.log(`Done after 5 loops!`);
   };
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center bg-priBG">
-      <code className="block my-4 text-[11px] md:text-[14px]">
+    <div className="w-full h-screen flex flex-col justify-center items-center bg-[#E5E4E9] dark:bg-priBG">
+      <code className="text-black dark:text-other2 block my-4 text-[11px] md:text-[14px]">
         <span className="text-other1 mr-2">{'<loading>'}</span>
         <span>
           <Typewriter
             words={[
               'Please wait...',
               'Setting up',
-              'Building environment',
-              'Getting things ready',
               'Done!!!',
             ]}
             loop={1}
@@ -49,7 +47,7 @@ const Loader = () => {
             cursorStyle="_"
             typeSpeed={70}
             deleteSpeed={50}
-            delaySpeed={1000}
+            delaySpeed={500}
             onLoopDone={handleDone}
             onType={handleType}
             stop={1}

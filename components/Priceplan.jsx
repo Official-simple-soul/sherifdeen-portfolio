@@ -13,7 +13,7 @@ function Priceplan() {
     <div id='plans'>
       <h1 className="my-6 text-center md:text-start">Training Price Plan</h1>
       <div className="grid md:grid-cols-3 gap-4">
-        <div className={`${light?'bg-white':'bg-cards'} card shadow-md text-center py-8 relative overflow-hidden  transition-all ease-in-out duration-500`}>
+        <div className={`${light?'bg-white':'bg-cards'} rounded-md card shadow-md text-center py-8 relative overflow-hidden  transition-all ease-in-out duration-500`}>
           <h1>Starter Price</h1>
           <p className="text-light text-[12px] my-6">
             $ <span className="text-4xl text-bold text-other1">FREE</span>/ hour
@@ -54,7 +54,7 @@ function Priceplan() {
             <FaAngleRight className="transition-all ease-in-out duration-500 text-sm" />
           </Link>
         </div>
-        <div className={`${light?'bg-white':'bg-cards'}  shadow-md card text-center py-8 relative overflow-hidden  transition-all ease-in-out duration-500`}>
+        <div className={`${light?'bg-white':'bg-cards'} rounded-md  shadow-md card text-center py-8 relative overflow-hidden  transition-all ease-in-out duration-500`}>
           <h1>Basic Price</h1>
           <p className="text-light text-[12px] my-6">
             $ <span className="text-4xl text-bold text-other1">5</span>/ hour
@@ -102,7 +102,7 @@ function Priceplan() {
             POPULAR
           </div>
         </div>
-        <div className={`${light?'bg-white':'bg-cards'}  shadow-md card text-center py-8 relative  transition-all ease-in-out duration-500`}>
+        <div className={`${light?'bg-white':'bg-cards'} rounded-md  shadow-md card text-center py-8 relative  transition-all ease-in-out duration-500rounded-md `}>
           <h1>Premium Price</h1>
           <p className="text-light text-[12px] my-6">
             $ <span className="text-4xl text-bold text-other1">12</span> hour

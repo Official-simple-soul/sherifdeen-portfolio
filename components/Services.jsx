@@ -12,7 +12,7 @@ function Services() {
       <h1 className="text-xl text-center md:text-start">My Services</h1>
       <div className="grid md:grid-cols-3 gap-4 mt-3">
         {services.map((service, idx) => (
-          <div className={`${light?'bg-white':'bg-cards'} shadow-md card  px-5 py-8 relative transition-all ease-in-out duration-500`} key={idx}>
+          <div className={`${light?'bg-white':'bg-cards'} rounded-md shadow-md card  px-5 py-8 relative transition-all ease-in-out duration-500`} key={idx}>
             <h1>{service.title}</h1>
             <p className='mt-3 text-[12px] text-other2 text-justify'>{service.text}</p>
 

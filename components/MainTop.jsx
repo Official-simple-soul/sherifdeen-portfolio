@@ -23,7 +23,7 @@ const {light} = useGlobalContext()
         <code className={`${light&&'text-white'} block my-4 text-[12px] md:text-[14px]`}>
           <span className="text-other1 mr-2">{'<code>'}</span><span>
           <Typewriter
-            words={['I build web interface', 'I build ios and andriod app', 'I create responsive web app', 'I offer mentorship and trainings']}
+            words={['I build web interface', 'I build ios and andriod app', 'I create responsive web app', 'I offer mentorship & training']}
             loop={0}
             cursor
             cursorStyle='_'

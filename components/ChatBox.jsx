@@ -3,6 +3,7 @@ import { FaTimes } from 'react-icons/fa';
 import chatBox from '../chats/chatdata';
 import { useRouter } from 'next/router';
 import { FiArrowRightCircle } from 'react-icons/fi';
+import Link from 'next/link';
 function ChatBox({ showChat, setShowChat, flag, setFlag }) {
   const [userChat, setUserChat] = useState([]);
   const [val, setVal] = useState('');
@@ -38,12 +39,17 @@ function ChatBox({ showChat, setShowChat, flag, setFlag }) {
             setShowChat(false);
             setUserChat([]);
             break;
+          case 'call':
+            window.location.href = 'tel:+2348139781147';
+            setShowChat(false);
+            setUserChat([]);
+            break;
           case 'f':
             setUserChat((prevUserChat) => [...prevUserChat, chatBox.d]);
             setShowChat(false);
             setUserChat([]);
             break;
-            case 'co':
+          case 'co':
             router.push('/contact');
             setShowChat(false);
             setUserChat([]);
@@ -73,7 +79,6 @@ function ChatBox({ showChat, setShowChat, flag, setFlag }) {
       }, 1000);
     }
   };
-  
 
   useEffect(() => {
     let timerId;

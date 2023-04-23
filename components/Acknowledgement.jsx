@@ -11,7 +11,7 @@ function Acknowledgement() {
       <div className="relative h-24 w-24 mx-auto">
         <Image src={'/ackn/acaedf.png'} alt="acaedf" fill className={`${light?'':'mix-blend-color-dodge'} shadow-md`}/>
       </div>
-      <div className="relative h-28 w-28 mx-auto">
+      <div className="relative h-24 w-28 mx-auto">
         <Image src={'/ackn/kodecamp.png'} alt="kodecamp" fill className={`${light?'':'mix-blend-color-dodge'} shadow-md`}/>
       </div>
       <div className="relative h-24 w-36 mx-auto">
