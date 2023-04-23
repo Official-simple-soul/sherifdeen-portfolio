@@ -33,7 +33,7 @@ const Loader = () => {
 
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center bg-priBG">
-      <code className="block my-4">
+      <code className="block my-4 text-[11px] md:text-[14px]">
         <span className="text-other1 mr-2">{'<loading>'}</span>
         <span>
           <Typewriter
