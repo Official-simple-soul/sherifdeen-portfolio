@@ -16,7 +16,7 @@ function ProjectMain() {
   return (
     <div className="">
       {loading ? (
-        <div className="flex justify-center items-center w-full h-97vh md:h-[95vh]">
+        <div className="flex justify-center items-center w-full h-[97vh] md:h-[95vh]">
           <div className="animate-spin h-5 w-5 border-t border-r border-b border-4 border-gray-700 rounded-full"></div>
         </div>
       ) : (
