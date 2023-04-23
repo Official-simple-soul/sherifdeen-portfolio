@@ -38,7 +38,7 @@ const Loader = () => {
         <span>
           <Typewriter
             words={[
-              'Please wait while we set up',
+              'Please wait...',
               'Setting up',
               'Building environment',
               'Getting things ready',

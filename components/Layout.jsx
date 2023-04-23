@@ -33,10 +33,6 @@ const {light} = useGlobalContext()
         />
         <link rel="icon" href="codelogo.png" />
       </Head>
-      <div className="hidden space-y-4 h-screen w-full flex flex-col items-center justify-center">
-        <h1 className="text-xl">I say not to open on mobile.</h1>
-        <h1>Una no dey hear word. Dah</h1>
-      </div>
       <div className={`${light?'text-gray-700':'text-white'} overflow-hidden`}>
         {timer <= 100 ? (
           <Loader />
