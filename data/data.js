@@ -256,7 +256,7 @@ export const projects = [
         id: 9,
         name: 'RealEstate Project',
         desc: 'A web application built to ease the stress of real estate surveyors and potential client from moving up and down in search of properties. Properties can easily be identified and booked for inspection',
-        image: '/projects/realestates.png',
+        image: '/projects/real-estate.png',
         link: 'realestate-trade.vercel.app',
         code: 'https://github.com/Official-simple-soul/realestate-trade.git'
     },

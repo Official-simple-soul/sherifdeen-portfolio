@@ -59,7 +59,7 @@ const Loader = () => {
       <div className="bg-[black] w-80 h-1 mt-6 rounded-md">
         <div className="bg-other1 h-full rounded-md" style={{ width: `${timer}%` }}></div>
       </div>
-      <p>{timer}%</p>
+      <p className='text-black dark:text-other2'>{timer}%</p>
     </div>
   );
 };
