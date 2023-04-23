@@ -72,7 +72,7 @@ const {light} = useGlobalContext()
         ref={form}
         className={`${light?'bg-white':'bg-cards'} p-5 space-y-6`}
       >
-        <div className={`${light?'bg-[#F4F4F6]':'bg-cards'} flex w-full h-12`}>
+        <div className={`${light?'bg-[#F4F4F6]':'bg-[#24242F]'} flex w-full h-12`}>
           <FaUserAlt className={`${light?'bg-[#F4F4F6]':'bg-secBG'} px-4 h-[100%] text-other2 text-[45px]`} />
           <input
             type="name"
@@ -84,7 +84,7 @@ const {light} = useGlobalContext()
             className="focus:outline-none placeholder:text-other2 placeholder:text-[12px] px-2 w-full bg-transparent h-full text-other2 text-[14px]"
           />
         </div>
-        <div className={`${light?'bg-[#F4F4F6]':'bg-cards'} flex w-full h-12`}>
+        <div className={`${light?'bg-[#F4F4F6]':'bg-[#24242F]'} flex w-full h-12`}>
           <MdOutlineAlternateEmail className={`${light?'bg-[#F4F4F6]':'bg-secBG'} px-4 h-[100%] text-other2 text-[45px]`} />
           <input
             type="email"
@@ -96,7 +96,7 @@ const {light} = useGlobalContext()
             className="focus:outline-none placeholder:text-other2 placeholder:text-[12px] px-2 w-full bg-transparent h-full text-other2 text-[14px]"
           />
         </div>
-        <div className={`${light?'bg-[#F4F4F6]':'bg-cards'} flex w-full h-28`}>
+        <div className={`${light?'bg-[#F4F4F6]':'bg-[#24242F]'} flex w-full h-28`}>
           <div className={`${light?'bg-[#F4F4F6]':'bg-secBG'} h-[100%]`}>
             <GoMail className="px-4 text-other2 text-[45px]" />
           </div>

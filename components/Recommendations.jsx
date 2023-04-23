@@ -29,12 +29,12 @@ function Recommendations() {
 
           const cardLeft =
             idx + 1 === num - 1
-              ? '-left-[100%] opacity-0'
+              ? 'md:-left-[100%] opacity-0'
               : idx + 1 === num
               ? 'left-[0%]'
               : idx + 1 === num + 1
-              ? 'md:left-[52%] left-[100%]'
-              : 'left-[200%] opacity-0';
+              ? 'md:left-[52%] md:opacity-100 opacity-0'
+              : 'md:left-[200%] opacity-0';
           return (
             <div
               className={`${cardLeft}  ${light?'bg-white':'bg-cards'} shadow-md card p-5 absolute w-[100%] md:w-[48%] h-[210px] transition-all ease-in-out duration-1000`}
@@ -45,7 +45,7 @@ function Recommendations() {
               </div>
               <h1 className="text-[14px]">{name}</h1>
               <h1 className="text-[12px] italic text-other2 mt-1">{title}</h1>
-              <p className="text-[12px] text-other2 mt-6">{review}</p>
+              <p className="text-[12px] text-other2 mt-3">{review}</p>
               <div className="flex justify-start mt-6">
                 <div className={`${light?'bg-[#DFDFE5]':'bg-secBG'} flex space-x-1 px-4 py-2 rounded-xl text-[14px]`}>
                   <Star n={rating} />
