@@ -8,10 +8,10 @@ import Acknowledge from './Acknowledgement'
 import Footer from './Footer'
 
 const expe = [
-  { dig: '10+', desc: 'Years Experience' },
-  { dig: '143', desc: 'Completed Projects' },
-  { dig: '114', desc: 'Happy customers' },
-  { dig: '20+', desc: 'Honors and Awards' },
+  { dig: '2+', desc: 'Years Experience' },
+  { dig: '14', desc: 'Completed Projects' },
+  { dig: '45', desc: 'Happy customers' },
+  { dig: '5', desc: 'Honors and Awards' },
 ];
 
 function Main() {

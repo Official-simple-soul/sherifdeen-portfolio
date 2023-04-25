@@ -44,12 +44,14 @@ function ProjectMain() {
                   <div className="flex items-center justify-between text-[12px]">
                     <Link
                       href={`${project.live}`}
+                      as="external-link"
                       className="hover:bg-gray-700 hover:text-white px-5 rounded-md shadow bg-transparent border border-other2 text-other2 transition-all ease-in-out duration-500"
                     >
                       Live
                     </Link>
                     <Link
                       href={`${project.code}`}
+                      as="external-link"
                       className="hover:bg-gray-700 hover:text-white px-5 rounded-md shadow bg-transparent border border-other2 text-other2 transition-all ease-in-out duration-500"
                     >
                       Code
