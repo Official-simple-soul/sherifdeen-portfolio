@@ -43,15 +43,17 @@ function ProjectMain() {
                   <p className="text-[10px] text-other2 my-3">{project.desc}</p>
                   <div className="flex items-center justify-between text-[12px]">
                     <Link
-                      href={`${project.live}`}
-                      as="external-link"
+                      href={project.link}
+                      as={project.link}
+                      target='_black'
                       className="hover:bg-gray-700 hover:text-white px-5 rounded-md shadow bg-transparent border border-other2 text-other2 transition-all ease-in-out duration-500"
                     >
                       Live
                     </Link>
                     <Link
-                      href={`${project.code}`}
-                      as="external-link"
+                      href={project.code}
+                      as={project.code}
+                      target='_black'
                       className="hover:bg-gray-700 hover:text-white px-5 rounded-md shadow bg-transparent border border-other2 text-other2 transition-all ease-in-out duration-500"
                     >
                       Code

@@ -257,7 +257,7 @@ export const projects = [
         name: 'RealEstate Project',
         desc: 'A web application built to ease the stress of real estate surveyors and potential client from moving up and down in search of properties. Properties can easily be identified and booked for inspection',
         image: '/projects/real-estate.png',
-        link: 'realestate-trade.vercel.app',
+        link: 'https://realestate-trade.vercel.app/',
         code: 'https://github.com/Official-simple-soul/realestate-trade.git'
     },
     {
@@ -265,7 +265,7 @@ export const projects = [
         name: 'DearLu Fashion Project',
         desc: 'DearLu Fashion web app is an application that offers commercial services of shopping for clothings, shoes and other fashions. It offers delivery to anywhere in the world. My biggest project',
         image: '/projects/dearlufashions.png',
-        link: 'dearlu-fashion.vercel.app',
+        link: 'https://dearlu-fashion.vercel.app/',
         code: 'https://github.com/Official-simple-soul/dearlu-fashion.git'
     },
     {
@@ -273,7 +273,7 @@ export const projects = [
         name: 'MovieTrailer Project',
         desc: 'In this app, you can search for any movie of your choice and get the trailers. My first Vue web application. The app was built to learn and master VueJs',
         image: '/projects/movietrailers.png',
-        link: 'movie-trailer-eight.vercel.app',
+        link: 'https://movie-trailer-eight.vercel.app/',
         code: 'https://github.com/Official-simple-soul/MovieTrailer.git'
     },
 ]
