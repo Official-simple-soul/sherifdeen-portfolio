@@ -23,7 +23,7 @@ function Header({showHeader, setShowHeader}) {
           <div className="right-2 bottom-2 rounded-full h-3 w-3 absolute bg-other1"></div>
         </div>
         <div className="text-center">
-          <h1 className="my-4">Simple_Soul</h1>
+          <h1 className="my-4">Sherif-deen Abdur-roheem</h1>
           <h4 className="text-[#8C8C8E] text-[14px]">Web/Mobile Developer</h4>
           <h4 className="text-[#8C8C8E] text-[14px]">DevOps Engineer</h4>
           <Link
@@ -47,8 +47,8 @@ function Header({showHeader, setShowHeader}) {
             <h5 className="text-[#8C8C8E] text-[14px]">Akwa-Ibom</h5>
           </div>
           <div className="flex justify-between items-center">
-            <h5 className="text-[14px]">Age:</h5>
-            <h5 className="text-[#8C8C8E] text-[14px]">29</h5>
+            <h5 className="text-[14px]">Fancy Name:</h5>
+            <h5 className="text-[#8C8C8E] text-[14px]">Simple_Soul</h5>
           </div>
         </div>
         <Skill />
