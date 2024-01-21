@@ -19,7 +19,7 @@ function MainTop() {
     <div className={`bg2 p-8 lg:p-16 relative`}>
       <div className="content text-center lg:text-start">
         <h1 className="text-4xl text-white font-bold">
-          Discover my Amazing <br></br>Art Space!
+          What's on Your Mind <br></br>Let's Bring it To Reality
         </h1>
         <code
           className={`${
