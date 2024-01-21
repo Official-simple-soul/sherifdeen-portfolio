@@ -17,7 +17,7 @@ function MainTop() {
   };
 
   return (
-    <div className={`bg2 p-8 lg:p-16 relative`}>
+    <div className={`bg2 p-8 lg:p-16 relative overflow-hidden`}>
       <div className="content text-center lg:text-start">
         <h1 className="text-4xl text-white font-bold">
           What's on Your Mind <br></br>Let's Bring it To Reality
@@ -55,11 +55,11 @@ function MainTop() {
         </Link>
       </div>
       <Image
-        src={'/skillImages/mainf.png'}
+        src={'/me-pic-.png'}
         alt=""
         // fill
-        height={420}
-        width={420}
+        height={370}
+        width={370}
         className="hidden lg:block absolute right-0 -top-10"
       />
     </div>

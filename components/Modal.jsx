@@ -26,7 +26,7 @@ function CustomModal({ setOpenModal, openModal }) {
     customizations: {
       title: 'SimpleSoul Innovate',
       description: 'Order for a service',
-      logo: 'public/codelogo.png',
+      logo: '/codelogo.png',
     },
   };
 
